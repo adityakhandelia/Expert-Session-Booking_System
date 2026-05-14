@@ -1,8 +1,8 @@
-# Expert Booking System - Complete Project Setup
+# Expert Booking System
 
 A real-time expert session booking system with React frontend and Node.js/Express backend.
 
-## 📋 Project Overview
+##  Project Overview
 
 This is a full-stack application that allows users to:
 - Browse available experts by category
@@ -10,7 +10,7 @@ This is a full-stack application that allows users to:
 - Book appointments with real-time slot updates
 - Track and manage their bookings
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 vedaz_assignment/
@@ -122,56 +122,56 @@ npm start
 
 Frontend will open at: **http://localhost:3000**
 
-## ✨ Features Implemented
+##  Features Implemented
 
-### ✅ Expert Listing Screen
+###  Expert Listing Screen
 - Display experts with name, category, experience, rating
 - Search by expert name
 - Filter by category
 - Pagination support (5 experts per page)
 - Loading and error states
 
-### ✅ Expert Detail Screen
+###  Expert Detail Screen
 - Show complete expert profile
 - Display available time slots grouped by date
 - Real-time slot updates when booked by another user
 - Socket.io integration for live updates
 - Click slot to proceed with booking
 
-### ✅ Booking Screen
+###  Booking Screen
 - Form with fields: Name, Email, Phone, Date, Time Slot, Notes
 - Input validation (email format, 10-digit phone)
 - Show selected expert and time details
 - Success message on successful booking
 - Automatic slot disable after booking
 
-### ✅ My Bookings Screen
+###  My Bookings Screen
 - Search bookings by email
 - Display booking status (Pending, Confirmed, Completed)
 - Show booking details (expert, date, time, contact info)
 - Update booking status (Pending → Confirmed → Completed)
 - Sort bookings by date
 
-### ✅ Backend API
+###  Backend API
 - `GET /api/experts` - Get experts with pagination & filters
 - `GET /api/experts/:id` - Get expert details
 - `POST /api/bookings` - Create booking (with validation)
 - `GET /api/bookings?email=` - Get user bookings
 - `PATCH /api/bookings/:id/status` - Update booking status
 
-### ✅ Real-Time Features
+###  Real-Time Features
 - Socket.io for real-time slot updates
 - Prevents double booking with unique index
 - Race condition handling
 - Room-based broadcasting for expert slots
 
-### ✅ Error Handling
+###  Error Handling
 - Meaningful validation error messages
 - Proper HTTP status codes
 - User-friendly error displays
 - Success confirmations
 
-## 🔒 Security & Validation
+##  Security & Validation
 
 ### Backend Validation
 - Email format validation
@@ -185,7 +185,7 @@ Frontend will open at: **http://localhost:3000**
 - Server-side validation before database operations
 - Socket.io events for real-time slot synchronization
 
-## 📡 Real-Time Updates via Socket.io
+##  Real-Time Updates via Socket.io
 
 ### Socket Events
 **Client → Server:**
@@ -198,7 +198,7 @@ Frontend will open at: **http://localhost:3000**
 - `slot-update` - Real-time availability change
 - `booking-updated` - Status change notification
 
-## 📝 API Examples
+##  API Examples
 
 ### Get Experts
 ```bash
@@ -236,7 +236,7 @@ Content-Type: application/json
 }
 ```
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 
 - Clean, modern interface
 - Responsive design (mobile, tablet, desktop)
@@ -247,7 +247,7 @@ Content-Type: application/json
 - Easy navigation with breadcrumbs
 - Consistent styling throughout
 
-## 📱 Responsive Design
+##  Responsive Design
 
 - Mobile-first approach
 - Grid layouts that adapt to screen size
@@ -255,7 +255,7 @@ Content-Type: application/json
 - Readable typography on all devices
 - Flexible navigation
 
-## 🛠️ Development
+##  Development
 
 ### Running Tests
 ```bash
@@ -274,7 +274,7 @@ npm test
 - Reusable utility functions
 - Clear error handling
 
-## 📦 Dependencies
+##  Dependencies
 
 ### Backend
 - express - Web framework
@@ -290,7 +290,7 @@ npm test
 - socket.io-client - WebSocket client
 - react-router-dom - Client-side routing
 
-## 🔧 Configuration
+##  Configuration
 
 ### Backend Environment Variables
 - `PORT` - Server port (default: 5000)
@@ -301,17 +301,13 @@ npm test
 - `REACT_APP_API_URL` - Backend API URL
 - `REACT_APP_SOCKET_URL` - WebSocket server URL
 
-## 📞 Support
+##  Support
 
 For issues or questions, refer to individual README files in:
 - `expert-booking-backend/README.md`
 - `expert-booking-frontend/README.md`
 
-## 📄 License
 
-ISC
-
----
 
 **Last Updated:** May 2026
-**Status:** ✅ Complete
+
